@@ -233,6 +233,8 @@ frontend/.vite/
 
 # Data artifacts (built locally, not committed)
 data/raw/*.parquet
+data/raw/*.csv
+data/raw/*.zip
 data/*.duckdb
 data/*.duckdb.wal
 

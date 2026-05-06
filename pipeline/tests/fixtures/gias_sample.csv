@@ -1,0 +1,6 @@
+URN,EstablishmentName,Postcode,LA (name),LA (code),GSSLACode (name),PhaseOfEducation (name),TypeOfEstablishment (name),ReligiousCharacter (name),Gender (name),EstablishmentStatus (name),Easting,Northing
+142178,The Charter School East Dulwich,SE22 8EY,Southwark,210,E09000028,Secondary,Academy converter,Does not apply,Mixed,Open,533812,175362
+100123,Some London Primary,SE4 2EL,Lewisham,209,E09000023,Primary,Community school,None,Mixed,Open,535000,175000
+200456,Manchester Academy,M14 7BG,Manchester,355,E08000003,Secondary,Academy converter,None,Mixed,Open,384000,395000
+137000,Closed Sec School,SE1 2AB,Southwark,210,E09000028,Secondary,Free Schools,None,Mixed,Closed,533000,179000
+138999,Lewisham Sec,SE13 6EE,Lewisham,209,E09000023,Secondary,Academy converter,Church of England,Mixed,Open,538000,175000

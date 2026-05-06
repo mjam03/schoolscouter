@@ -25,12 +25,12 @@ Track progress by ticking off completed stages. Don't skip ahead — each stage 
 
 **Goal:** End-to-end pipeline for GIAS + ONSPD only, validating the architecture.
 
-- [ ] `pipeline/schoolscouter_pipeline/sources/gias.py`: fetch, parse to Polars, validate schema, write Parquet
-- [ ] `pipeline/schoolscouter_pipeline/sources/onspd.py`: same shape for postcode data
-- [ ] `pipeline/schoolscouter_pipeline/validation/schemas.py`: Polars schema definitions for each source
-- [ ] `pipeline/schoolscouter_pipeline/build_db.py`: orchestrator, writes DuckDB file
-- [ ] DuckDB built locally with `schools` and `postcodes` tables
-- [ ] Tests for each source module (with a small fixture sample, not full downloads)
+- [x] `pipeline/schoolscouter_pipeline/sources/gias.py`: fetch, parse to Polars, validate schema, write Parquet
+- [x] `pipeline/schoolscouter_pipeline/sources/onspd.py`: same shape for postcode data
+- [x] `pipeline/schoolscouter_pipeline/validation/schemas.py`: Polars schema definitions for each source
+- [x] `pipeline/schoolscouter_pipeline/build_db.py`: orchestrator, writes DuckDB file
+- [x] DuckDB built locally with `schools` and `postcodes` tables
+- [x] Tests for each source module (with a small fixture sample, not full downloads)
 
 **Done when:** `uv run python -m schoolscouter_pipeline.build_db` produces a working DuckDB you can `SELECT` against. London secondaries appear in the schools table; SE4 2EL resolves to coordinates in the postcodes table.
 
@@ -38,13 +38,13 @@ Track progress by ticking off completed stages. Don't skip ahead — each stage 
 
 **Goal:** All four primary sources joined into the schools table.
 
-- [ ] `sources/ees_ks4.py` for Progress 8 / Attainment 8 / GCSE grades
-- [ ] `sources/ofsted.py` for inspection grades
-- [ ] `transforms/build_schools.py` performing the joins on URN
-- [ ] Suppression code handling at source-module boundary (`c`, `..`, `low`, `x` → `NULL`)
-- [ ] COVID-gap handling for Progress 8 (rows present, score NULL, flag column set)
-- [ ] Confidence interval columns populated correctly
-- [ ] Schema-pinning tests (fail loudly if upstream renames a column)
+- [x] `sources/ees_ks4.py` for Progress 8 / Attainment 8 / GCSE grades
+- [x] `sources/ofsted.py` for inspection grades
+- [x] `transforms/build_schools.py` performing the joins on URN
+- [x] Suppression code handling at source-module boundary (`c`, `..`, `low`, `x` → `NULL`)
+- [x] COVID-gap handling for Progress 8 (rows present, score NULL, flag column set)
+- [x] Confidence interval columns populated correctly
+- [x] Schema-pinning tests (fail loudly if upstream renames a column)
 
 **Done when:** A query joining all four sources for Charter East Dulwich returns a complete, sensible row across multiple academic years.
 
