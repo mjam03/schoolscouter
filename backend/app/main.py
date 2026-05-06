@@ -1,4 +1,5 @@
 """Schoolscouter backend."""
+
 from fastapi import FastAPI
 
 app = FastAPI(title="Schoolscouter API", version="0.1.0")
